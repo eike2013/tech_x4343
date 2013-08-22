@@ -1,0 +1,36 @@
+Title: Raspberry Pi Statistiken
+Date: 2013-06-25 15:31
+Category: RPi
+Tags: raspberry_pi, statistiken, bash, skript
+Author: x4343
+Summary: automatisch aktualisierende Statistiken des Raspberry Pi (Modell B, rev.2)
+
+# Übersicht der Raspberry Pi Betriebszeitanalyse
+
+Hier die interessanteren 'Live' Daten des RPi.
+Leider auch bisher nichts weiter außer die interne CPU Temperatur.
+
+``` bash
+cat /sys/class/thermal/thermal_zone0/temp
+``` 
+
+Weitere Daten werden zwar ständig geloggt, aber die passenden Gnuplot Skripte wurden noch nicht geschrieben.
+Folgt hoffentlich im Laufe der nächsten Woche.
+
+## CPU Temperatur, stündlich
+
+![CPU_TEMP_DAILY](/static/pictures/cpu_temp_1h.png)
+
+Update-Intervall: *5 Minuten*
+
+## CPU Temperatur, 3-stündlich
+
+![CPU_TEMP_MONTHLY](/static/pictures/cpu_temp_3h.png)
+
+Update-Intervall: *15 Minuten*
+
+## CPU Temperatur, täglich
+
+![CPU_TEMP_YEARLY](/static/pictures/cpu_temp_1d.png)
+
+Update-Intervall: *15 Minuten*

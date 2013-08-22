@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+        <meta charset="utf-8">
+        <title>RPi Langzeit Statistiken</title>
+        <link rel="stylesheet" href="http://tech.x4343.org/theme/css/main.css">
+                
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+	<!-- Using MathJax, with the delimiters $ -->
+	<!-- Conflict with pygments for the .mo and .mi -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  "HTML-CSS": {
+	  styles: {
+	  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+	  },
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+	  });
+	  MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+	  var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+	  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+	  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+	  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+	  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+	  });
+	  MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+	  var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+	  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+	  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+	  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+	  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+	  });
+	</script>
+
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://tech.x4343.org/">tech.x4343 </a></h1>
+                <nav><ul>
+                                                                                    <li ><a href="http://tech.x4343.org/category/misc.html">Misc</a></li>
+                                    <li class="active"><a href="http://tech.x4343.org/category/rpi.html">RPi</a></li>
+                                                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://tech.x4343.org/rpi-langzeit-statistiken.html" rel="bookmark"
+           title="Permalink to RPi Langzeit Statistiken">RPi Langzeit Statistiken</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-06-25T15:31:00">
+                Tue 25 June 2013
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a>
+        </address>
+        <p>In <a href="http://tech.x4343.org/category/rpi.html">RPi</a>. </p>
+<p>tags: <a href="http://tech.x4343.org/tag/raspberry_pi.html">raspberry_pi</a><a href="http://tech.x4343.org/tag/statistiken.html">statistiken</a><a href="http://tech.x4343.org/tag/bash.html">bash</a><a href="http://tech.x4343.org/tag/skript.html">skript</a></p>
+</footer><!-- /.post-info -->      <h1>Übersicht der Raspberry Pi Langzeit-Betriebszeitanalyse</h1>
+<p>Hier werden die automatisch generierten Gnuplot-Graphen der RPi-Betriebszeiten angezeigt.
+Diese sind zur Zeit <em>(Stand 28.6.2013)</em> noch eher bescheiden und beschränken sich auf die CPU Temperatur.
+Selbst diese ist leider nicht sehr genau, sodass in Zukunft ein zusätzlicher Temperatursensor mittels AD-Wandler bessere Ergebnisse liefern soll.
+Aber da ist bisher noch nichts konkretes gemacht worden und ist ein anderes Thema...</p>
+<h2>CPU Temperatur, wöchentlich</h2>
+<p><img alt="CPU_TEMP_DAILY" src="/static/pictures/cpu_temp_1w.png" style="width: 800px; height: auto; max-width: 100%;"/></p>
+<p>Update-Intervall: <em>täglich</em></p>
+<h2>CPU Temperatur, monatlich</h2>
+<p><img alt="CPU_TEMP_MONTHLY" src="/static/pictures/cpu_temp_1m.png" style="width: 800px; height: auto; max-width: 100%;"/></p>
+<p>Update-Intervall: <em>alle 3 Tage</em></p>
+<h2>CPU Temperatur, jährlich</h2>
+<p><img alt="CPU_TEMP_YEARLY" src="/static/pictures/cpu_temp_1y.png" style="width: 800px; height: auto; max-width: 100%;"/></p>
+<p>Update-Intervall: <em>jede Woche</em></p>
+    </div><!-- /.entry-content -->
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+                        <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                                                    <li><a href="http://blog.fefe.de/">Fefe</a></li>
+                                                </ul>
+                </div><!-- /.blogroll -->
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://tech.x4343.org/None" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="#">Another social link</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
