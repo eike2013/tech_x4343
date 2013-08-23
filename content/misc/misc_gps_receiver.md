@@ -4,6 +4,7 @@ Category: Misc
 Tags: gps, glonass, gnss
 Author: x4343
 Summary: Pictures of professional two-frequency GNSS receivers
+Status: draft
 
 # Trimble Ag361
 

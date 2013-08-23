@@ -23,6 +23,9 @@ SOCIAL = (('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
 
+ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{slug}/"
+ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%m}/{slug}/index.html"
+
 # Use Typogrify Library
 #TYPOGRIFY = True
 
@@ -40,3 +43,5 @@ RESPONSIVE_IMAGES = True
 #RELATIVE_URLS = True
 STATIC_PATHS = [
 	'pictures',]
+
+THEME = 'basic'
