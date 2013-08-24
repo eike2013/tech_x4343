@@ -41,21 +41,21 @@ Ein großer Vorteil von SQLite: Die gesamte DB befindet sich in einer Datei. Som
 ``` bash
 cp datenbank.db datenbank.backup
 ```
-Schnell ist eine entsprechende Datenbank mit einer Tabelle (tbl1) erstellt.
+Schnell ist eine entsprechende Datenbank mit einer Tabelle `tbl1` erstellt.
 Anschließend die notwendigen Spalten mit Datentyp hinzufügen. Da bei mir nur Zahlen geloggt werden, reicht als Datentyp *Integer*.
 
-``` bash
+``` sql
 CREATE TABLE tbl1(time int, cpu_temp int,cpu_freq int, cpu_freq_min int,\
 cpu_freq_max int, cpu_load_1m int, cpu_load_5m int, cpu_load_15m int,\
 cpu_perc_user int, cpu_perc_total int)
 ```
 
-Diese können nun ganz einfach mit Werten gefüllt werden. Dazu werden die Werte via bash in Variablen geschrieben und diese per INSERT Befehl in eine neue Zeile der Datenbank geschrieben
+Diese können nun ganz einfach mit Werten gefüllt werden. Dazu werden die Werte via bash in Variablen geschrieben und diese per `INSERT` Befehl in eine neue Zeile der Datenbank geschrieben.
 
 ## Befehle
 
-Im Grunde lassen sich alle Parameter mehr oder weniger mit einem Einzeiler in cat auslesen.
-Die entsprechenden Files befinden sich in /sys oder /proc.
+Im Grunde lassen sich alle Parameter mehr oder weniger mit einem Einzeiler in `cat` auslesen.
+Die entsprechenden Files befinden sich in `/sys` oder `/proc`.
 
 Für den Arbeitsspeicher ist bspw. folgender Befehl notwendig:
 
@@ -76,7 +76,7 @@ DirectMap4k:       64416 kB
 DirectMap2M:     7874560 kB
 ```
 
-Da längst nicht alle benötigt werden, muss noch ein bisschen gefiltert *(grep)* und gekürzt *(cut)* werden. Der benutzte Arbeitsspeicher lässt sich einfach mit *let* ausrechnen.
+Da längst nicht alle benötigt werden, muss noch ein bisschen gefiltert `grep` und gekürzt `cut` werden. Der benutzte Arbeitsspeicher lässt sich einfach mit *let* ausrechnen.
 
 ``` bash
 MEM_TOTAL=$(cat /proc/meminfo | grep "MemTotal" | tr -s ' ' | cut -d ' ' -f2)

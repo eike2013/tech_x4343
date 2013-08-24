@@ -50,12 +50,12 @@ cpu_freq_max int, cpu_load_1m int, cpu_load_5m int, cpu_load_15m int,\
 cpu_perc_user int, cpu_perc_total int)
 ```
 
-Diese können nun ganz einfach mit Werten gefüllt werden. Dazu werden die Werte via bash in Variablen geschrieben und diese per IS`INSERT` Befehl in eine neue Zeile der Datenbank geschrieben
+Diese können nun ganz einfach mit Werten gefüllt werden. Dazu werden die Werte via bash in Variablen geschrieben und diese per `INSERT` Befehl in eine neue Zeile der Datenbank geschrieben.
 
 ## Befehle
 
-Im Grunde lassen sich alle Parameter mehr oder weniger mit einem Einzeiler in cat auslesen.
-Die entsprechenden Files befinden sich in '/sys' oder '/proc'.
+Im Grunde lassen sich alle Parameter mehr oder weniger mit einem Einzeiler in `cat` auslesen.
+Die entsprechenden Files befinden sich in `/sys` oder `/proc`.
 
 Für den Arbeitsspeicher ist bspw. folgender Befehl notwendig:
 
@@ -167,7 +167,9 @@ ROOTFS_FREE=$(df -h | grep "rootfs" | tr -s ' ' | cut -d ' ' -f4)
 ROOTFS_FREE=$(calc $ROOTFS_FREE)
 
 #	Writing to SQLite
-sqlite3 $HOME/skripte/mon.db "insert into tbl1 values ($TIME,$CPU_TEMP,$CPU_FREQ,$CPU_FREQ_MIN,$CPU_FREQ_MAX,$CPU_LOAD_1M,$CPU_LOAD_5M,$CPU_LOAD_15M,$CPU_PERC_USER,$CPU_PERC_NICE,$CPU_PERC_SYSTEM,$CPU_PERC_IDLE,$MEM_TOTAL,$MEM_FREE,$MEM_USED,$ROOTFS_TOTAL,$ROOTFS_USED,$ROOTFS_FREE);"
+sqlite3 $HOME/skripte/mon.db "insert into tbl1 values ($TIME,$CPU_TEMP,$CPU_FREQ,$CPU_FREQ_MIN,$CPU_FREQ_MAX,\
+$CPU_LOAD_1M,$CPU_LOAD_5M,$CPU_LOAD_15M,$CPU_PERC_USER,$CPU_PERC_NICE,$CPU_PERC_SYSTEM,$CPU_PERC_IDLE,$MEM_TOTAL,\
+$MEM_FREE,$MEM_USED,$ROOTFS_TOTAL,$ROOTFS_USED,$ROOTFS_FREE);"
 
 #echo "Total: $ROOTFS_TOTAL\nUsed: $ROOTFS_USED\nFree: $ROOTFS_FREE"
 
