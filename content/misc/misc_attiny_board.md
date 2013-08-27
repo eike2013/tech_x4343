@@ -41,14 +41,13 @@ Here is the wiring:
 
 # Pictures
 
-![ATTINY_BOARD](/static/pictures/attiny_board/20130216_004b.jpg)
-![ATTINY_BOARD](/static/pictures/attiny_board/20130225_002b.jpg)
-
+[ ![ATTINY_BOARD](/static/pictures/attiny_board/thumbs/20130216_004b.jpg "Board1") ](/static/pictures/attiny_board/20130216_004b.jpg)
+[ ![ATTINY_BOARD](/static/pictures/attiny_board/thumbs/20130225_002b.jpg "Board1") ](/static/pictures/attiny_board/20130225_002b.jpg)
 
 # Useful Links
  
 [1: Attiny Library](http://hlt.media.mit.edu/?p=1695)
 
-[2: Arduino Ethernet Schematic *(.pdf)*](http://arduino.cc/de/uploads/Main/arduino-ethernet-schematic.pdf)
+[2: Arduino Ethernet Schematic](http://arduino.cc/de/uploads/Main/arduino-ethernet-schematic.pdf)
 
 [3: Arduino Ethernet as ISP](http://forum.arduino.cc/index.php?topic=112940.0;wap2)

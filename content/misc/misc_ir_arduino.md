@@ -61,7 +61,7 @@ Luckily they are both working together in perfect harmony. I just have to pulse 
 # The solution
 
 Picture of the test lab:
-![WEBSITE_DEBUG](/static/pictures/infrared/20130713_002b.jpg)
+[ ![TEST_LAB](/static/pictures/infrared/thumbs/20130713_002b.jpg "TestLab") ](/static/pictures/infrared/20130713_002b.jpg)
 
 # Schematics, Code & Analysis
 

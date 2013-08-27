@@ -13,16 +13,37 @@ body {
   display: block;
 }
 
-a:link    { color: blue; text-decoration: none;      }
-a:hover   { color: blue; text-decoration: underline; }
-a:visited { color: blue;                             }
+a:link    { color: black;                   }
+a:hover   { text-decoration: line-through   }
+a:visited { color: black;                   }
 
-h1 a { color: inherit !important }
-h2 a { color: inherit !important }
+a[href$=".pdf"]:after {
+padding: 10px 16px;
+margin: 0 0px 0 10px;
+content: "";
+background: url(icons/printer32.png) no-repeat;
+}
+
+
+h1 { 
+border-top: 1px dotted #f00;
+border-bottom: 1px dotted #f00;
+}
+
+h2 { 
+border-top: 1px dotted #f00;
+border-bottom: 1px dotted #f00;
+}
+
+h1 a { color: inherit !important; text-decoration: none; }
+h2 a { color: inherit !important; text-decoration: none; }
 h3 a { color: inherit !important }
 h4 a { color: inherit !important }
 h5 a { color: inherit !important }
 h6 a { color: inherit !important }
+
+h1 a:hover {text-decoration: line-through ;}
+h2 a:hover {text-decoration: line-through ;}
 
 #menu li {
     display: inline;
@@ -37,4 +58,10 @@ pre {
     margin: 2em 1em 2em 4em;
     white-space: pre-wrap;
 }
+
+code { 
+    color: black;
+    background-color: #F0F0F0 ;
+}
+
 
