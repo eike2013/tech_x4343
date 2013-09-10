@@ -1,53 +1,32 @@
-Title: Attiny85 Programming Board
-Date: 2013-07-29 19:12
+Title: Rescue a Fused-to-Death-Attiny85
+Date: 2013-09-10 22:57
 Category: Misc
-Tags: attiny85, circuit_board
+Tags: attiny85, fuses, high voltage programming
 Author: x4343
-Summary: Attiny85 Programming Board
+Summary: Rescue an fused-to-death-Attiny85 with simple high voltage programming
 
-For easy Arduino projects I normally use the smaller Attiny µ-processors instead of the big evaluation board.
-Since it's very straight forward to programm this small thing using the Arduino as an ISP programmer, there is nothing to be afraid of *(see links)*!
+I accidentally destroyed my Attiny85. I wanted to use an external 16 MHz crystal to speed it up.
+But in a hurry I accidentally burned the bootloader for 20 MHz to it.
+Burning a bootloader via ArduinoISP programmer to the Attiny does also mean that the internal 'fuses' are set up to the preselected frequency.
+So once the Attiny's fuses a set to external 20 MHz (FE DF FF), there is no way to connect to it without this 20 MHz crystal.
+Unfortunatly I don't have one. But I don't want to throw it away, either.
+So I found a very suitable solution to reset the Attiny to factory settings (62 DF FF) with so called 'high voltage programming'.
 
-There are several good tutorials, so I won't repeat the basics here.
+This can be easily done with the Arduino as ISP Programmer. The only thing you need is a NPN transistor, 5x 1k resistor (current protection for the Arduino Pins),
+ 1x 10k resistor and a 12V power supply (eponymous for 'high voltage programming').
 
-The only change you have do make if using an Arduino Ethernet Board is changing the `reset` variable:
-
-``` C
-//#define RESET SS
-#define RESET     2
-```
-
-But that's only necessary for the Ethernet Boards. Normally `Pin 10` is reset. But on the Ethernet Board is reserved for 
-The most annoying thing was, that I used a breadboard exclusive for programming. So I came up with this little board...
-
-It contains 3 status leds:
-- Heartbeat --> Green
-- Error --> Red
-- Programming --> Yellow
- 
-Here is the wiring:
-
-| Description | Pin Arduino Ethernet | Pin Board |
-| --- | :---: | :---: |
-| GND| GND| 1|
-| 5V| 5V | 2|
-| SCK|12 | 3|
-| MISO| 11| 4|
-| MOSI| 10| 5|
-| LED Heartbeat| 9| 6|
-| LED Error| 8| 7|
-| LED Progr.| 7| 8|
-| Reset| 2| 9|
-
-# Pictures
-
-[ ![ATTINY_BOARD](/static/pictures/attiny_board/thumbs/20130216_004b.jpg "Board1") ](/static/pictures/attiny_board/20130216_004b.jpg)
-[ ![ATTINY_BOARD](/static/pictures/attiny_board/thumbs/20130225_002b.jpg "Board1") ](/static/pictures/attiny_board/20130225_002b.jpg)
+[ ![Screenshot](/static/pictures/attiny_fuses/attiny_fuses_rescued.png "Screenshot") ](/static/pictures/attiny_fuses/attiny_fuses_rescued.png)
 
 # Useful Links
  
-[1: Attiny Library](http://hlt.media.mit.edu/?p=1695)
+[1: German Instruction](http://www.elektronik-labor.de/Arduino/Fuses.html)
 
-[2: Arduino Ethernet Schematic](http://arduino.cc/de/uploads/Main/arduino-ethernet-schematic.pdf)
+[2: English Instruction](http://www.rickety.us/2010/03/arduino-avr-high-voltage-serial-programmer/)
 
-[3: Arduino Ethernet as ISP](http://forum.arduino.cc/index.php?topic=112940.0;wap2)
+Here's the used code:
+
+[3: Arduino Code](http://www.rickety.us/wp-content/uploads/2010/03/hv_serial_prog.pde)
+
+To get a hint what the hex values are representing, I strongly recommend the Atmel AVR Fuse Calculator:
+
+[4: Atmel AVR Fuse Calculator](http://www.engbedded.com/fusecalc/)
