@@ -1,217 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-        <meta charset="utf-8">
-        <title>A Pelican Blog</title>
-        <link rel="stylesheet" href="/theme/css/main.css">
-                <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-                
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+                <title>tech.x4343</title>
+        <meta charset="utf-8" />
+                                                                        
+        <link rel="stylesheet" href="http://tech.x4343.org/theme/css/rdark.css" />
+	<link rel="stylesheet" type="text/css" href="http://tech.x4343.org/theme/css/main.css" />
+        <link href="http://tech.x4343.org/" type="application/atom+xml" rel="alternate" title="tech.x4343 ATOM Feed" /><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+                	
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": {
+  styles: {
+  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  },
+  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                                                                                    <li ><a href="/category/misc.html">Misc</a></li>
-                                    <li ><a href="/category/rpi.html">RPi</a></li>
-                                                </ul></nav>
+                <h1><a href="http://tech.x4343.org">tech.x4343 <strong></strong></a></h1>
         </header><!-- /#banner -->
-                
-            
+        <nav id="menu"><ul>
+                                          </ul></nav><!-- /#menu -->
+        <section id="content">
+<h2>All articles</h2>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/rescue-a-fused-to-death-attiny85.html">Rescue a Fused-to-Death-Attiny85</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2013-09-10T22:57:00">
-                Di 10 September 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/misc.html">Misc</a>. </p>
-<p>tags: <a href="/tag/attiny85.html">attiny85</a><a href="/tag/fuses.html">fuses</a><a href="/tag/high-voltage-programming.html">high voltage programming</a></p>
-</footer><!-- /.post-info --><p>I accidentally destroyed my Attiny85. I wanted to use an external 16 MHz crystal to speed it up.
-But in a hurry I accidentally burned the bootloader for 20 MHz to it. So no way to reprogramm it without a 20 MHz crystal.
-I don't have one. But I found a very suitable solution to reset the Attiny to factory settings with so called 'high voltage programming'.</p>
-<p><a href="/static/pictures/attiny_fuses/attiny_fuses_rescued.png"> <img alt="ATTINY_BOARD" src="/static/pictures/attiny_board/thumbs/20130216_004b.jpg" title="Board1" /> </a></p>
-<h1>Useful Links</h1>
-<p><a href="http://www.elektronik-labor.de/Arduino/Fuses.html">1: German Instruction</a></p>
-<p><a href="http://www.rickety.us/2010/03/arduino-avr-high-voltage-serial-programmer/">2: English Instruction</a></p>
-<p><a href="http://www.rickety.us/wp-content/uploads/2010/03/hv_serial_prog.pde">3: Arduino Code</a></p>
-<p><a href="http://www.engbedded.com/fusecalc/">4: Atmel AVR Fuse Calculator</a></p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/pulsed-infrared-connection-as-stay-alive-signal.html" rel="bookmark"
-                           title="Permalink to Pulsed Infrared Connection as Stay-Alive Signal">Pulsed Infrared Connection as Stay-Alive Signal</a></h1>
-                </header>
-                
-                <div class="entry-content">
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/09/rescue-a-fused-to-death-attiny85/" rel="bookmark" title="Permalink to Rescue a Fused-to-Death-Attiny85">Rescue a Fused-to-Death-Attiny85</a></h2> </header>
                 <footer class="post-info">
-        <abbr class="published" title="2013-08-05T20:40:00">
-                Mo 05 August 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/misc.html">Misc</a>. </p>
-<p>tags: <a href="/tag/attiny85.html">attiny85</a><a href="/tag/infrared.html">infrared</a><a href="/tag/fluke.html">fluke</a><a href="/tag/pulsed.html">pulsed</a></p>
-</footer><!-- /.post-info -->                <p>Pulsed Infrared Connection as Stay-Alive Signal using Attiny85, TSOP1138 and CQY99</p>
-                <a class="readmore" href="/pulsed-infrared-connection-as-stay-alive-signal.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/attiny85-programming-board.html" rel="bookmark"
-                           title="Permalink to Attiny85 Programming Board">Attiny85 Programming Board</a></h1>
-                </header>
-                
-                <div class="entry-content">
+                    <abbr class="published" title="2013-09-10T22:57:00"> Di 10 September 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Rescue an fused-to-death-Attiny85 with simple high voltage programming</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/08/pulsed-infrared-connection-as-stay-alive-signal/" rel="bookmark" title="Permalink to Pulsed Infrared Connection as Stay-Alive Signal">Pulsed Infrared Connection as Stay-Alive Signal</a></h2> </header>
                 <footer class="post-info">
-        <abbr class="published" title="2013-07-29T19:12:00">
-                Mo 29 Juli 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/misc.html">Misc</a>. </p>
-<p>tags: <a href="/tag/attiny85.html">attiny85</a><a href="/tag/circuit_board.html">circuit_board</a></p>
-</footer><!-- /.post-info -->                <p>Attiny85 Programming Board</p>
-                <a class="readmore" href="/attiny85-programming-board.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/pyload-webserver-jinja2-probleme.html" rel="bookmark"
-                           title="Permalink to Pyload Webserver (Jinja2)-Probleme">Pyload Webserver (Jinja2)-Probleme</a></h1>
-                </header>
-                
-                <div class="entry-content">
+                    <abbr class="published" title="2013-08-05T20:40:00"> Mo 05 August 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Pulsed Infrared Connection as Stay-Alive Signal using Attiny85, TSOP1138 and CQY99</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/07/attiny85-programming-board/" rel="bookmark" title="Permalink to Attiny85 Programming Board">Attiny85 Programming Board</a></h2> </header>
                 <footer class="post-info">
-        <abbr class="published" title="2013-07-09T12:56:00">
-                Di 09 Juli 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/rpi.html">RPi</a>. </p>
-<p>tags: <a href="/tag/raspberry_pi.html">raspberry_pi</a><a href="/tag/pyload.html">pyload</a><a href="/tag/python.html">python</a><a href="/tag/jinja2.html">jinja2</a></p>
-</footer><!-- /.post-info -->                <p>Probleme mit dem pyload Webserver</p>
-                <a class="readmore" href="/pyload-webserver-jinja2-probleme.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/skript-zum-loggen-von-leistungsdaten.html" rel="bookmark"
-                           title="Permalink to Skript zum Loggen von Leistungsdaten">Skript zum Loggen von Leistungsdaten</a></h1>
-                </header>
-                
-                <div class="entry-content">
+                    <abbr class="published" title="2013-07-29T19:12:00"> Mo 29 Juli 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Attiny85 Programming Board</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/07/pyload-webserver-jinja2-probleme/" rel="bookmark" title="Permalink to Pyload Webserver (Jinja2)-Probleme">Pyload Webserver (Jinja2)-Probleme</a></h2> </header>
                 <footer class="post-info">
-        <abbr class="published" title="2013-06-28T16:20:00">
-                Fr 28 Juni 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/rpi.html">RPi</a>. </p>
-<p>tags: <a href="/tag/raspberry_pi.html">raspberry_pi</a><a href="/tag/statistiken.html">statistiken</a><a href="/tag/bash.html">bash</a><a href="/tag/skript.html">skript</a></p>
-</footer><!-- /.post-info -->                <p>Ein Skript das mit einfachen Bordmitteln CPU, RAM und HDD Logs erstellt</p>
-                <a class="readmore" href="/skript-zum-loggen-von-leistungsdaten.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/rpi-langzeit-statistiken.html" rel="bookmark"
-                           title="Permalink to RPi Langzeit Statistiken">RPi Langzeit Statistiken</a></h1>
-                </header>
-                
-                <div class="entry-content">
+                    <abbr class="published" title="2013-07-09T12:56:00"> Di 09 Juli 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Probleme mit dem pyload Webserver</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/06/skript-zum-loggen-von-leistungsdaten/" rel="bookmark" title="Permalink to Skript zum Loggen von Leistungsdaten">Skript zum Loggen von Leistungsdaten</a></h2> </header>
                 <footer class="post-info">
-        <abbr class="published" title="2013-06-25T15:31:00">
-                Di 25 Juni 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/rpi.html">RPi</a>. </p>
-<p>tags: <a href="/tag/raspberry_pi.html">raspberry_pi</a><a href="/tag/statistiken.html">statistiken</a><a href="/tag/bash.html">bash</a><a href="/tag/skript.html">skript</a></p>
-</footer><!-- /.post-info -->                <p>automatisch aktualisierende Statistiken des Raspberry Pi (Modell B, rev.2)</p>
-                <a class="readmore" href="/rpi-langzeit-statistiken.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/rpi-statistiken.html" rel="bookmark"
-                           title="Permalink to RPi Statistiken">RPi Statistiken</a></h1>
-                </header>
-                
-                <div class="entry-content">
+                    <abbr class="published" title="2013-06-28T16:20:00"> Fr 28 Juni 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Ein Skript das mit einfachen Bordmitteln CPU, RAM und HDD Logs erstellt</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/06/rpi-langzeit-statistiken/" rel="bookmark" title="Permalink to RPi Langzeit Statistiken">RPi Langzeit Statistiken</a></h2> </header>
                 <footer class="post-info">
-        <abbr class="published" title="2013-06-25T15:31:00">
-                Di 25 Juni 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="/author/x4343.html">x4343</a>
-        </address>
-        <p>In <a href="/category/rpi.html">RPi</a>. </p>
-<p>tags: <a href="/tag/raspberry_pi.html">raspberry_pi</a><a href="/tag/statistiken.html">statistiken</a><a href="/tag/bash.html">bash</a><a href="/tag/skript.html">skript</a></p>
-</footer><!-- /.post-info -->                <p>automatisch aktualisierende Statistiken des Raspberry Pi (Modell B, rev.2)</p>
-                <a class="readmore" href="/rpi-statistiken.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                                                    </section><!-- /#content -->
-                    <section id="extras" class="body">
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
-
+                    <abbr class="published" title="2013-06-25T15:31:00"> Di 25 Juni 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>automatisch aktualisierende Statistiken des Raspberry Pi (Modell B, rev.2)</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://tech.x4343.org/posts/2013/06/rpi-statistiken/" rel="bookmark" title="Permalink to RPi Statistiken">RPi Statistiken</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-06-25T15:31:00"> Di 25 Juni 2013 </abbr>
+                    <address class="vcard author">By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a></address>                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>automatisch aktualisierende Statistiken des Raspberry Pi (Modell B, rev.2)</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+<p class="paginator">
+        Page 1 / 1
+    </p>
+</section><!-- /#content -->
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
 </body>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+                <title>tech.x4343</title>
+        <meta charset="utf-8" />
+                                                                        
+        <link rel="stylesheet" href="http://tech.x4343.org/theme/css/rdark.css" />
+	<link rel="stylesheet" type="text/css" href="http://tech.x4343.org/theme/css/main.css" />
+        <link href="http://tech.x4343.org/" type="application/atom+xml" rel="alternate" title="tech.x4343 ATOM Feed" /><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+                	
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": {
+  styles: {
+  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  },
+  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://tech.x4343.org">tech.x4343 <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+                                          </ul></nav><!-- /#menu -->
+        <section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://tech.x4343.org/posts/2013/06/rpi-langzeit-statistiken/" rel="bookmark"
+         title="Permalink to RPi Langzeit Statistiken">RPi Langzeit Statistiken</a></h2>
+  
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-06-25T15:31:00">
+      Di 25 Juni 2013
+    </abbr>
+        <address class="vcard author">
+      By <a class="url fn" href="http://tech.x4343.org/author/x4343.html">x4343</a>
+    </address>
+      </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <html><body><h1>Übersicht der Raspberry Pi Langzeit-Betriebszeitanalyse</h1>
+<p>Hier werden die automatisch generierten Gnuplot-Graphen der RPi-Betriebszeiten angezeigt.
+Diese sind zur Zeit <em>(Stand 28.6.2013)</em> noch eher bescheiden und beschränken sich auf die CPU Temperatur.
+Selbst diese ist leider nicht sehr genau, sodass in Zukunft ein zusätzlicher Temperatursensor mittels AD-Wandler bessere Ergebnisse liefern soll.
+Aber da ist bisher noch nichts konkretes gemacht worden und ist ein anderes Thema...</p>
+<h2>CPU Temperatur, wöchentlich</h2>
+<p><img alt="CPU_TEMP_DAILY" src="/static/pictures/cpu_temp_1w.png" style="width: 800px; height: auto; max-width: 100%;"/></p>
+<p>Update-Intervall: <em>täglich</em></p>
+<h2>CPU Temperatur, monatlich</h2>
+<p><img alt="CPU_TEMP_MONTHLY" src="/static/pictures/cpu_temp_1m.png" style="width: 800px; height: auto; max-width: 100%;"/></p>
+<p>Update-Intervall: <em>alle 3 Tage</em></p>
+<h2>CPU Temperatur, jährlich</h2>
+<p><img alt="CPU_TEMP_YEARLY" src="/static/pictures/cpu_temp_1y.png" style="width: 800px; height: auto; max-width: 100%;"/></p>
+<p>Update-Intervall: <em>jede Woche</em></p></body></html>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

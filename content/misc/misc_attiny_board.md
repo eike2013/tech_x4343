@@ -17,7 +17,7 @@ The only change you have do make if using an Arduino Ethernet Board is changing 
 #define RESET     2
 ```
 
-But that's only necessary for the Ethernet Boards. Normally `Pin 10` is reset. But on the Ethernet Board is reserved for 
+But that's only necessary for the Ethernet Boards. Normally `Pin 10` is reset. But on the Ethernet Board it is reserved for the Ethernet Chip/SD Card
 The most annoying thing was, that I used a breadboard exclusive for programming. So I came up with this little board...
 
 It contains 3 status leds:
