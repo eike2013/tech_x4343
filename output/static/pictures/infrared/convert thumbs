@@ -1,1 +1,0 @@
-convert "$bild" -gravity center -extent 1000x1000 -monochrome "thumbs/$bild"
