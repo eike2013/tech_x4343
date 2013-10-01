@@ -1,0 +1,8 @@
+pi@raspberrypi ~ $ lynx raspi33609.no-ip.org:2170
+Looking up  'raspi33609.no-ip.org' first
+
+   SOURCETABLE 200 OK Server: Lefebure NTRIP Caster/2010.02.19
+   Content-Type: text/plain Content-Length: 76
+   STR;hzu;hzu;RTCM;;2;GPS;LefebureRTK;;41.0;-91.0;0;0;Unknown;none;B;N;96
+   00; ENDSOURCETABLE
+

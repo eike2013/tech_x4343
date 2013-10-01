@@ -1,0 +1,7 @@
+# Ignore Makefiles
+Makefile*
+*.py
+*.pyc
+
+# Ignore output directory
+output/
