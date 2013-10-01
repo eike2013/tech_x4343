@@ -52,7 +52,7 @@ Alles besser als die Shell unter Windows zu nutzen...
 
 Für einfache Testanwendungen kann sogar der implementierte Server genutzt werden. Dieser bietet allerdings kaum Freiraum. So ist bspw. der Port fest eingestellt.
 
-![NTRIP_CASTER](/static/pictures/ntrip/28-08-2013 17-27-42.png "Lefebure NTRIP Caster")
+![NTRIP_CASTER](/static/pictures/ntrip/ntrip_caster.png "Lefebure NTRIP Caster")
 
 Da eben jener Port von der Firewall Policy nicht ausgenommen war, musste der Caster über SSH Portforwarding über meinen heimischen Raspberry Pi geroutet werden.
 
@@ -137,7 +137,7 @@ Die Caster IP samt Mountpoint und Zugangsdaten wurden ins RTK Net Modem eingetra
 Die eingewählten Clients lassen sich übersichtlich im Caster anzeigen:
 
 
-![NTRIP_CASTER](/static/pictures/ntrip/28-08-2013 17-08-55.png "NTRIP Clientlist")
+![NTRIP_CASTER](/static/pictures/ntrip/ntrip_clientlist.png "NTRIP Clientlist")
 
 
 # Useful Links
