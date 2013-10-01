@@ -14,7 +14,7 @@ Ziel war es, das Gesamtkonstrukt des sogenannten RTK Net Korrekturdatendienstes 
 
 'GPS Receiver als RTK-Referenzstation -> RTCM 3.0 -> Computer mit Caster und Server <- Client <- GPS Receiver als Client'
 
-Clientseitig ist dies kein Problem. Für Windowsbenutzer empfielt sich das komfortable und ebenso einfache "GNSS Internet Radio".
+Clientseitig ist dies kein Problem. Für Windowsbenutzer empfiehlt sich das komfortable und ebenso einfache "GNSS Internet Radio".
 Wer tiefer ins Detail gehen möchte, guckt sich den "BKG Ntrip Client" an.
 
 Der Client verbindet sich zu einem Server. Logisch. Der Server wiederum listet einen oder mehrere Caster, welche letztendlich den NTRIP Stream versenden.
