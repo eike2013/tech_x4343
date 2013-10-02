@@ -1,4 +1,4 @@
-Title: DIY Ntrip Caster
+Title: Einrichten eines eigenen NTRIP Casters
 Date: 2013-10-01 20:48
 Category: Misc
 Tags: ntrip, rtk, gps, lefebure
@@ -10,9 +10,11 @@ Summary: Setting up an own NTRIP caster
 # Was ist ein NTRIP Caster bzw. ein NTRIP Netzwerk?
 
 Während der letzten Arbeitstage vor meinem Studium, habe ich versucht mit den vorhandenen GPS Equipment aus unserem Büro einen NTRIP Caster einzurichten.
-Ziel war es, das Gesamtkonstrukt des sogenannten RTK Net Korrekturdatendienstes testweise selbst zu betreiben.
+Ziel war es, das Gesamtkonstrukt des sogenannten RTK Net Korrekturdatendienstes selbst zu betreiben.
 
-'GPS Receiver als RTK-Referenzstation -> RTCM 3.0 -> Computer mit Caster und Server <- Client <- GPS Receiver als Client'
+Folgender Aufbau war gedacht:
+
+[ ![SCHEMATIC](/static/pictures/ntrip/thumbs/schematic.jpg "Schematic") ](/static/pictures/ntrip/schematic.jpg)
 
 Clientseitig ist dies kein Problem. Für Windowsbenutzer empfiehlt sich das komfortable und ebenso einfache "GNSS Internet Radio".
 Wer tiefer ins Detail gehen möchte, guckt sich den "BKG Ntrip Client" an.
@@ -22,6 +24,9 @@ Verbindet sich der Client mit einem Server, so kann der Benutzer einen der verf�
 
 Der Client muss sich nur noch mit Username und Password authentifizieren. Anschließend wird die aktuelle Position via GGA String an den Caster übermittelt.
 Je größer die Entfernung, desto ungenauer die vom Client berechnete Korrektur. Im Idealfall "sehen" Client und Caster dieselbe Satellitenkonstellation (Skyplot).
+
+In der Realität befindet sich der Client (häufig auch Rover genannt) in Bewegung. Bspw. in der Vermessungsindustrie, im Straßenbau oder der Landwirtschaft.
+Natürlich profitieren leider wieder einmal auch militärische Anwendungen von der hochgenauen DGPS Technologie.
 
 Als Faustformel kann man festhalten, dass pro 10 km Entfernung die Genauigkeit um 1 cm abnimmt. Somit ist eine dem RTK Standard entsprechende Genauigkeit von 1-3 cm 
 nur im Radius von maximal 30 km von der Referenzstation möglich.
@@ -108,18 +113,19 @@ unix  2      [ ACC ]     STREAM     LISTENING     2932     /var/run/minissdpd.so
 unix  2      [ ACC ]     STREAM     LISTENING     2497     /var/run/dbus/system_bus_socket
 unix  2      [ ACC ]     SEQPACKET  LISTENING     477      /run/udev/control
 ```
-Falls dort 127.0.0.1:5000 steht, muss die GatewayPorts Option im SSH Server entsprechend konfiguriert werden:
+Falls dort 127.0.0.1:5000 steht, muss die GatewayPorts Option im SSH Server entsprechend konfiguriert werden und anschließend neugestartet werden:
 
 ``` bash
 sudo bash
 echo "GatewayPorts clientspecified" >> /etc/ssh/sshd_config
+/etc/init.d/ssh restart
 ```
 
 Anschließend ist der NTRIP Caster weltweit erreichbar:
 
 ``` bash
 pi@raspberrypi ~ $ lynx raspiXXXXX.no-ip.org:2170
-Looking up  'raspi33609.no-ip.org' first
+Looking up  'raspiXXXXX.no-ip.org' first
 
    SOURCETABLE 200 OK Server: Lefebure NTRIP Caster/2010.02.19
    Content-Type: text/plain Content-Length: 76
