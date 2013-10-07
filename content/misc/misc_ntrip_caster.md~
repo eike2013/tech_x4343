@@ -13,7 +13,8 @@ Während der letzten Arbeitstage vor meinem Studium, habe ich versucht mit den v
 Ziel war es, das Gesamtkonstrukt des sogenannten RTK Net Korrekturdatendienstes selbst zu betreiben.
 
 Folgender Aufbau war gedacht:
-'GPS Receiver als RTK-Referenzstation -> RTCM 3.0 -> Computer mit Caster und Server <- Client <- GPS Receiver als Client'
+
+[ ![SCHEMATIC](/static/pictures/ntrip/thumbs/schematic.jpg "Schematic") ](/static/pictures/ntrip/schematic.jpg)
 
 Clientseitig ist dies kein Problem. Für Windowsbenutzer empfiehlt sich das komfortable und ebenso einfache "GNSS Internet Radio".
 Wer tiefer ins Detail gehen möchte, guckt sich den "BKG Ntrip Client" an.
@@ -72,6 +73,7 @@ Not shown: 998 filtered ports
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
+5000/tcp open  upnp
 
 Nmap done: 1 IP address (1 host up) scanned in 5.81 seconds
 pi@raspberrypi ~ $ sudo nmap -sS 127.0.0.1
@@ -88,7 +90,16 @@ PORT     STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 1.24 seconds
 ```
 
-Und anschließend überprüfen, ob die 'Local Address' korrekt auf 0.0.0.0:5000 läuft:
+Falls der Port 5000 nur unter 127.0.0.1 (localhost) erreichbar ist, muss die GatewayPorts Option im SSH Server entsprechend konfiguriert werden und dieser anschließend neugestartet werden.
+
+
+``` bash
+sudo bash
+echo "GatewayPorts clientspecified" >> /etc/ssh/sshd_config
+/etc/init.d/ssh restart
+```
+
+Und anschließend überprüfen, ob auf 0.0.0.0:5000 TCP Verbindungen aktiv sind:
 
 ``` bash
 pi@raspberrypi ~ $ netstat -ln
@@ -112,15 +123,11 @@ unix  2      [ ACC ]     STREAM     LISTENING     2932     /var/run/minissdpd.so
 unix  2      [ ACC ]     STREAM     LISTENING     2497     /var/run/dbus/system_bus_socket
 unix  2      [ ACC ]     SEQPACKET  LISTENING     477      /run/udev/control
 ```
-Falls dort 127.0.0.1:5000 steht, muss die GatewayPorts Option im SSH Server entsprechend konfiguriert werden und anschließend neugestartet werden:
 
-``` bash
-sudo bash
-echo "GatewayPorts clientspecified" >> /etc/ssh/sshd_config
-/etc/init.d/ssh restart
-```
+Da dies der Fall ist, scheint das SSH Reverse Port Forwarding erfolgreich eingerichtet zu sein!
 
-Anschließend ist der NTRIP Caster weltweit erreichbar:
+Ein kurzer Test mit dem Kommandozeilen-Browser Lynx bestätigt die Erreichbarkeit über die dynamische Adresse.
+Also ist der NTRIP Caster weltweit erreichbar:
 
 ``` bash
 pi@raspberrypi ~ $ lynx raspiXXXXX.no-ip.org:2170
@@ -132,17 +139,25 @@ Looking up  'raspiXXXXX.no-ip.org' first
    00; ENDSOURCETABLE
 ```
 
-Auch auf meinem Firmenlaptop sah es gut aus:
+Die Sourcetable teilt der Server den Client die verfügbaren Caster und deren Konfiguration mit.
+Der Präfix STR indiziert, dass es sich um einen Stream handelt. 
+Danach folgend die entsprechenden Details wie Mountpoint: hzu, unterstützte GNSS: GPS, Format: RTCM usw.
+Eine genaue Auflistung findet sich unter [http://software.rtcm-ntrip.org/wiki/STR](http://software.rtcm-ntrip.org/wiki/STR).
+
+Auch auf meinem Firmenlaptop hinter der Firewall konnte der Server problemlos erreicht werden.
 
 ![NTRIP_CASTER](/static/pictures/ntrip/raspi_ntrip.png "Firefox NTRIP Caster")
+
+Ein erster Empfangstest mit dem GNSS Internet Radio verlief auch positiv.
 
 Abschließend wurde der finale Feldtest durchgeführt.
 Die Caster IP samt Mountpoint und Zugangsdaten wurden ins RTK Net Modem eingetragen. Der Empfang der RTCM Korrekturdaten funktionierte problemlos.
 
 Die eingewählten Clients lassen sich übersichtlich im Caster anzeigen:
 
-
 ![NTRIP_CASTER](/static/pictures/ntrip/ntrip_clientlist.png "NTRIP Clientlist")
+
+Leider konnten keine ausgiebigen Messungen und Logs gemacht werden, da das Equipment (speziell das als RTK Base umkonfigurierte Eclipse Board) wieder anderweitig genutzt wurde.
 
 
 # Useful Links
