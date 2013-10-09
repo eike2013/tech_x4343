@@ -71,8 +71,8 @@ Nmap scan report for 0.0.0.0
 Host is up (0.00043s latency).
 Not shown: 998 filtered ports
 PORT   STATE SERVICE
-22/tcp open  ssh
-80/tcp open  http
+22/tcp   open  ssh
+80/tcp   open  http
 5000/tcp open  upnp
 
 Nmap done: 1 IP address (1 host up) scanned in 5.81 seconds
