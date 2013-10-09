@@ -65,7 +65,7 @@ Picture of the test lab:
 
 # Schematics, Code & Analysis
 
-After some research, I found the following schematics are fullfilling all my needs:
+After some research, I found the following schematics are fulfilling all my needs:
 
 **IR-Sender**
 
