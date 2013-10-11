@@ -20,11 +20,32 @@ PS: It's called Case #1, because I've already another one half finished.
 
 # The Case Building Process 
 
+I used black acryl glass for the up- and downside. I saw it with a huge buzzsaw, so the edges are splintered. I'll never do it again. Even if it has to go fast, 
+it's always better to used an handsaw (e.g. a dovetail saw)!
+
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_1_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_1.jpg)
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_2_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_2.jpg)
+
+For the sides I used the old perforated metal plates from an Icybox harddrive case. I just had to cut them at the desired length.
+I decided to just make two parts and bend them at the edges. So two of the overall edges are very smooth. The other ones are glued together.
+For the glueing together I used epoxid-resin. After 12 hours the sides where absolutely steady mounted!
+At last I overpainted the broken color with a black marker. It's not visible unless you know where to look exactly.
+ 
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_3_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_3.jpg)
-[ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_4_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_4.jpg)
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_5_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_5.jpg)
+
+The next thing was drilling a hole for the OLED.
+This was kind of boring since I don't have had a Dremel at the time.
+I drilled a lot of holes and did the rest with a file. Hard hand time!
+
+
+[ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_4_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_4.jpg)
+[ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_8_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_8.jpg)
+[ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_9_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_9.jpg)
+
+Here you see the finished case!
+Now I just have to connect the OLED again and do all the programming stuff to give it some nice things to display.
+
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_6_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_6.jpg)
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_7_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_7.jpg)
 
