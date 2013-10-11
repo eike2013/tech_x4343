@@ -18,13 +18,7 @@ It's just for fun, because no one can read it from 2-3 meters distance ;)
 
 PS: It's called Case #1, because I've already another one half finished.
 
-# The Case
- 
-## The Drawing
- 
-[ ![CASE_DRAWING](/static/pictures/raspi_case1/thumbs/case1_drawing_thumb.png "Raspberry Pi Case Drawing") ](/static/pictures/raspi_case1/case1_drawing.png)
-
-## Building Process
+# The Case Building Process 
 
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_1_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_1.jpg)
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_2_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_2.jpg)
