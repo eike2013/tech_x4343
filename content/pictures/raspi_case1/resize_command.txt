@@ -1,0 +1,1 @@
+pi@pi-Dell-System-XPS-L322X:~/Dokumente/pelican/website/content/pictures/raspi_case1$ for i in *.jpg; do convert $i -resize 1280x1024\> -quality 75 case1_$COUNTER.jpg; rm $i; COUNTER=$[COUNTER +1]; done 

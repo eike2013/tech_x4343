@@ -1,4 +1,4 @@
-Title: Pulsed Infrared Connection as Stay-Alive Signal
+Title: Pulsed Infrared Sender / Receiver with Attiny85
 Date: 2013-08-05 20:40
 Category: Misc
 Tags: attiny85, infrared, fluke, pulsed
@@ -131,7 +131,7 @@ See [here][1] for further explanation.
 ![OSIC_graph_with_Resistor100b](/static/pictures/infrared/fluke/graph_with_Resistor100b.png)
 ![OSIC_graph_with_Resistor100](/static/pictures/infrared/fluke/graph_with_Resistor100.png)
 
-## Screenshots
+## Fluke Screenshots
 
 ![OSIC_Scr_01](/static/pictures/infrared/fluke/Scr_01.png)
 ![OSIC_Scr_02](/static/pictures/infrared/fluke/Scr_02.png)
