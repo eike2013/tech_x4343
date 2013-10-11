@@ -7,7 +7,7 @@ Summary: Building my first case for the Raspberry Pi with OLED SSD1306 from Adaf
 
 # Introduction
 
-This post is about my first case I used to build some month ago.
+This post is about my first case I used to build some months ago.
 The idea was to have some sort of DIY touch and to have the perfect enclosure for my Raspberry Pi which works as a Media Center under my flat screen.
 I attached the nice 128x32 SPI OLED SSD1306 from Adafruit, which works perfectly with the libraries provided by [GuyC@Gaugette](http://guy.carpenter.id.au/gaugette/blog/categories/raspberry-pi/).
 
