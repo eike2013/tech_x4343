@@ -1,6 +1,6 @@
 Title: Skript zum Loggen von Leistungsdaten
 Date: 2013-06-28 16:20
-Category: RPi
+Category: Raspberry Pi
 Tags: raspberry_pi, statistiken, bash, skript
 Author: x4343
 Summary: Ein Skript das mit einfachen Bordmitteln CPU, RAM und HDD Logs erstellt

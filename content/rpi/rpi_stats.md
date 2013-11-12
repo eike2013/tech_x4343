@@ -1,6 +1,6 @@
 Title: RPi Statistiken
 Date: 2013-06-25 15:31
-Category: RPi
+Category: Raspberry Pi
 Tags: raspberry_pi, statistiken, bash, skript
 Author: x4343
 Summary: automatisch aktualisierende Statistiken des Raspberry Pi (Modell B, rev.2)

@@ -1,6 +1,6 @@
 Title: Building a Case for the Raspberry Pi, #2
 Date: 2013-10-11 10:25
-Category: RPi
+Category: Raspberry Pi
 Tags: raspberry_pi, case, diy, oled, ssd1306
 Author: x4343
 Summary: Building my first case for the Raspberry Pi with OLED SSD1306 from Adafruit

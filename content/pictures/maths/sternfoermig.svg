@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="sternfoermig.png">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3806"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3803"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3788"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3785"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3806-0"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.0837731"
+     inkscape:cx="148.66746"
+     inkscape:cy="860.02098"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.46363636000000003;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2985"
+       sodipodi:sides="5"
+       sodipodi:cx="145.46197"
+       sodipodi:cy="201.81374"
+       sodipodi:r1="119.90217"
+       sodipodi:r2="59.951086"
+       sodipodi:arg1="0.88684512"
+       sodipodi:arg2="1.5151636"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 221.22341,294.74777 -72.42791,-33.0757 -68.30747,40.91327 9.075402,-79.10399 -60.019002,-52.32137 78.03682,-15.81326 31.21369,-73.249652 39.154,69.330862 79.31012,7.05059 -53.83831,58.66209 z"
+       inkscape:transform-center-x="2.0602282"
+       inkscape:transform-center-y="-9.4725313"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2987"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion2989"><rect
+           id="rect2991"
+           width="93.944183"
+           height="44.446712"
+           x="192.93913"
+           y="57.361927" /></flowRegion><flowPara
+         id="flowPara2993">aa</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="67.175148"
+       y="196.76299"
+       id="text2995"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2997"
+         x="67.175148"
+         y="196.76299">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="246.47722"
+       y="212.92543"
+       id="text2999"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3001"
+         x="246.47722"
+         y="212.92543">x</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.28235295;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0"
+       d="M 257.84144,158.12464 88.893424,223.53202"
+       id="path5189"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.28235294999999999;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0"
+       d="M 221.22341,295.00031 108.08632,155.59926"
+       id="path5191"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.28104576;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0;fill-opacity:0.46274510000000002;fill-rule:nonzero"
+       d="M 177.78685,151.30611 79.296975,303.08153"
+       id="path5193"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:url(#Arrow2Lend-3)"
+       d="m 93.944187,191.20714 46.972093,9.34391"
+       id="path5195"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.28235294999999999;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0"
+       d="M 31.314729,171.7617 202.28305,217.4711"
+       id="path5405"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.28235295;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0"
+       d="m 138.3909,82.3632 10.6066,178.797"
+       id="path5407"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:url(#Arrow2Lend-3)"
+       d="M 243.95184,202.06628 223.49626,182.11576"
+       id="path5409"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#984e08;fill-opacity:0.90849674;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:0.28235294999999999;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       id="path6551"
+       sodipodi:cx="221.2234"
+       sodipodi:cy="179.96919"
+       sodipodi:rx="3.5355339"
+       sodipodi:ry="3.661803"
+       d="m 224.75894,179.96919 a 3.5355339,3.661803 0 1 1 -7.07107,0 3.5355339,3.661803 0 1 1 7.07107,0 z"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#985100;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;stroke-miterlimit:4;stroke-dasharray:2,1,0.5,1;stroke-dashoffset:0"
+       d="m 144.70435,201.81374 76.7716,-21.71828"
+       id="path6553"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/pi/Dokumente/pelican/website/content/pictures/maths/sternfoermig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
