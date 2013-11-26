@@ -2,6 +2,7 @@
 Makefile*
 *.py
 *.pyc
-
+*.zip
+*.md~
 # Ignore output directory
 output/

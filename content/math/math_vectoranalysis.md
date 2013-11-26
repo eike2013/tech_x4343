@@ -5,6 +5,12 @@ Tags: maths, vectoranalysis, differentialequations
 Author: x4343
 Summary: Vektoranalysis
 
+Hier möchte ich einen Überblick über die vielfältigen Formeln der Vektoranalysis geben.
+
+Mein Ziel ist es, die Formeln nach und nach mit Grafiken zu ergänzen, um die Zusammenhänge klar zu machen.
+Nicht nur bei der Reihenfolge der Unterpunkte habe ich mich vom Papula, Band 3 inspirieren lassen...aber da es allgemeine Formeln sind, nehme ich mal stark an,
+dass diese nicht unter Copyright stehen.
+
 # #1: Ebene und räumliche Kurven
 
 ## 1.1 Vektorielle Darstellung einer Kurve
@@ -51,11 +57,11 @@ Für ein Produkt aus einer skalaren und einer Vektorfunktion gilt:
 
 Geschwindigkeitsvektor (1. Ableitung des Ortsvektors nach der Zeit):
 
-\\[  \vec{v}(t) = \dot{\vec{r}(t)} \\]
+\\[  \vec{v}(t) = \dot{\vec{r}}(t) \\]
 
 Beschleunigungsvektor (2. Ableitung des Ortsvektors nach der Zeit):
 
-\\[  \vec{a}(t) = \dot{\vec{v}(t)} = \ddot{\vec{r}(t)} \\]
+\\[  \vec{a}(t) = \dot{\vec{v}}(t) = \ddot{\vec{r}}(t) \\]
 
 ## 1.3 Bogenlänge
 
@@ -101,8 +107,71 @@ Am Beispiel des Geschwindigkeitsvektors:
 
 # #2: Flächen im Raum
 
+## 2.1 Vektorielle Darstellung einer Fläche
+
+Ortsvektor einer Fläche im Raum
+
+\\[  \vec{r} = \vec{r}(u;v) = x(u;v) \vec{e}_x + y(u;v) \vec{e}_y + z(u;v) \vec{e}_z = \left( \begin{array}{c} x(u;v) \\ y(u;v) \\ z(u;v) )\end{array} \right) \\]
+
+Tangentenvektoren an die Koordinatenlinien (u-, v-Linien)
+
+\\[ \vec{t}_u = \frac{\partial d \vec{r}}{\partial u}, \vec{t}_v = \frac{\partial d \vec{r}}{\partial v}\\]
+
+## 2.2 Flächenkurven
+
+## 2.3 Tangentialebene, Flächennormale, Flächenelement
+
+\\[ \vec{N} = \frac{\vec{t}_u \times \vec{t}_v}{| \vec{t}_u \times \vec{t}_v |} \\]
+
+Flächennormale im Punkt P:
+
+\\[ \vec{N}_0 = (\vec{r} - \vec{r}_0) = 0 \\]
+
+Flächenelement einer Fläche im Punkt $P$:
+
+\\[ dA = | \vec{t}_u \times \vec{t}_v | du dv \\]
+
+Flächennormale, Flächenelement und Tangentialebene einer Fläche vom Typ $ z = f(x;y)$ :
+
+\\[ \vec{r} = \vec{r}(x,y) = \left( \begin{array}{c} x\\ y \\ f(x;y) )\end{array} \right) \\]
+
+$x,y$ sind die sog. Flächenparameter.
+
+Tangentenvektoren an die Parameterlinien (x-Linien und y-Linien)
+
+\\[ \vec{t}_x \frac{\partial \vec{r}}{\partial x} =  \left( \begin{array}{c} x\\ 0 \\ f_x \end{array} \right), 
+\vec{t}_y \frac{\partial \vec{r}}{\partial y} =  \left( \begin{array}{c} 0\\ 1 \\ f_y \end{array} \right) \\]
+
+Flächennormale:
+
+\\[ \vec{N} = \frac{1}{\sqrt{f_x^2 + f_y^2 + 1}} \left( \begin{array}{c} -f_x \\ -f_y \\ 1 \end{array} \right) \\]
+
+Flächenelement:
+
+\\[ dA = \sqrt{f_x^2 + f_y^2 + 1} dx dy \\]
 
 # #3: Skalar- und Vektorfelder
+
+Ebenes Skalarfeld:
+
+\\[ \phi = \phi(P) = \phi(x;y) \\]
+
+Räumliches Skalarfeld:
+
+\\[ \phi = \phi(P) = \phi(x;y;z) \\]
+
+Homogenes Vektorfeld:
+
+Das Vektorfeld hat überall dieselbe Richtung und denselben Betrag! Analog des E-Feldes eines Plattenkondensators.
+
+\\[ \vec{F}(P) = \vec{F}(x;y;z) = \vec{\mbox{const}} \\]
+
+Kugel- oder radialsymmetrisches Vektorfeld (Zentralfeld):
+
+Hierbei ist der Feldvektor nach außen bzw. innen gerichtet. Der Betrag ist abhängig vom Abstand $r$.
+Analog des elektrischen Feldes eines Punktdipols
+
+\\[ \vec{F}(P) = f(r) \vec{e}_r \\]
 
 
 # #4: Gradient eines Skalarfeldes
