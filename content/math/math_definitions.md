@@ -14,10 +14,7 @@ Wer weiß, wo die entsprechenden Zettel mit den Definitonen und ihren Erklärung
 
 Die Sternförmigkeit kommt u.a. in der Vektoranalysis vor.
 
-$ \exists a \in \forall x \in M : \left\\{ y: y = a+(x-a)t, t \in [0,1] \right\\} \subseteq M $
-
-
-$ \forall a \in M \exists x \in M : \left\\{ y... \right\\} \nsubseteq M $
+$ \exists a \in \forall x \in M : \left\\{ y: y = x+t(a-x), t \in [0,1] \right\\} \subseteq M $
 
 Grob gesagt drückt die Definition folgendes aus: 
 
@@ -27,5 +24,9 @@ Das trivialste Beispiel für eine sternförmige Menge ist der 3 dimensionale Rau
 
 [![Zeichnung_sternförmig](/static/pictures/maths/sternfoermig.png)](/static/pictures/maths/sternfoermig.svg)
 
-# Useful Linkx
+# #2: Definition: Lipschitz-stetig
+
+Die Funktion $f: I \rightarrow \mathbb{R} $  ist Lipschitz-stetig auf $I$, falls gilt:
+
+$ \exists L > 0 \forall x, y \in I : |f(x) - f(y)| \le L |x-y|	$
  

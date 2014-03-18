@@ -60,6 +60,14 @@ Now I just have to connect the OLED again and do all the programming stuff to gi
 
 [ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_7_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_7.jpg)
 
+# UPDATE: Programming Stuff is done!
+
+OLED is now showing CPU load, Mem load and System Temperature. The display intervall can be set manually.
+The script will be posted the next days!
+For now i've finished my first case!
+
+
+[ ![CASE_PICTURE](/static/pictures/raspi_case1/thumbs/case1_11_thumb.jpg "Raspberry Pi Case 1") ](/static/pictures/raspi_case1/case1_11.jpg)
 
 
 

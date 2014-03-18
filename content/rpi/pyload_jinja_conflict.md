@@ -1,6 +1,6 @@
 Title: Pyload Webserver (Jinja2)-Probleme
 Date: 2013-07-09 12:56
-Category: RPi
+Category: Raspberry Pi
 Tags: raspberry_pi, pyload, python, jinja2
 Author: x4343
 Summary: Probleme mit dem pyload Webserver
@@ -11,10 +11,8 @@ Seitdem ich meinen RPi nutze um damit diese [pelican][pelican] Seiten zu generie
 Ich hab pyload bereits seit einigen Monaten laufen - unabhaengig davon, ob ich es nutze.
 Zieht ja kaum Performance...
 
-$\\delta t = 0 s$
-
 Der Server und alles andere laeuft auch nach wie vor problemlos. Erst nachdem man via Browser
-auf das Webinterface zugreifen moechte, kommt eine Fehler, der jeder weitere Arbeit unterbindet!
+auf das Webinterface zugreifen moechte, kommt eine Fehler, der jede weitere Arbeit unterbindet!
 
 > Critical Error while processing request
 
@@ -78,8 +76,8 @@ vermutete Problem mit *Jinja2* bestaetigte:
 Das Webinterface funktionierte immer noch nicht. Also folgte ich den Ratschlaegen des
 Installers und wagte mich daran *jinja2* auch neuzuinstallieren. Mir war unwohl dabei,
 da ich nicht wusste, ob pelican danach noch funktionieren wuerde...*(haette ich doch damals nicht
-den dringenden Hinweisen der pelican Entwickler ignoriert, das ganze unbedingt in einem eigenen python
-Environment zu installieren um gerade solcheC Cross-Kompatibilitaets-Problemen aus dem Weg zu
+die dringenden Hinweise der pelican Entwickler ignoriert, das ganze unbedingt in einem eigenen python
+Environment zu installieren um gerade solchen Cross-Kompatibilitaets-Problemen aus dem Weg zu
 gehen.)*
 
 Also: *jinja2* deinstallieren... 
@@ -103,8 +101,6 @@ Ich erhoffte mir nicht viel davon, weil ich bereits vorher schonmal die pyload F
 durchsucht habe und dorkeweiteren hilfreichen Ratschlaege fand.
 
 Doch durch Gottes Weisung fand ich die Loesung in einem [Github Ticket](https://github.com/mitsuhiko/jinja2/issues/225).
-
-Es fiel mir wie Schuppen von den Augen: > Da waere ich nie von selbst drauf gekommen!
 
 Der Ratschlag ist so professionell wie [simpel](/static/pictures/pyload/09-07-2013_jinja2-1.png):
 

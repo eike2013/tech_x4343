@@ -12,10 +12,15 @@ Wer weiß, wo die entsprechenden Zettel mit den Definitonen und ihren Erklärung
 
 # #1: Definition: Sternförmig
 
-$ \exists a \in \forall x \in M : \left\\{ y: y = a+(x-a)t, t \in [0,1] \right\\} \subseteq M $
+Die Sternförmigkeit kommt u.a. in der Vektoranalysis vor.
 
+$ \exists a \in \forall x \in M : \left\\{ y: y = x+t(a-x), t \in [0,1] \right\\} \subseteq M $
 
-$ \forall a \in M \exists x \in M : \left\\{ y... \right\\} \nsubseteq M $
+Grob gesagt drückt die Definition folgendes aus: 
+
+Jeder Punkt $\vec{x} \in M$ lässt sich durch eine Strecke mit $\vec{x_0}$ verbinden. Die Strecke verlässt $M $ nicht.
+
+Das trivialste Beispiel für eine sternförmige Menge ist der 3 dimensionale Raum $ \mathbb{R} $ an sich.
 
 [![Zeichnung_sternförmig](/static/pictures/maths/sternfoermig.png)](/static/pictures/maths/sternfoermig.svg)
 

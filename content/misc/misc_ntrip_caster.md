@@ -5,7 +5,9 @@ Tags: ntrip, rtk, gps, lefebure
 Author: x4343
 Summary: Setting up an own NTRIP caster
 
+*------*
 *At the moment only available in german!*
+*------*
 
 # Was ist ein NTRIP Caster bzw. ein NTRIP Netzwerk?
 
